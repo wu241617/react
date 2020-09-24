@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			html,body{
+				width:100%;
+				height:100%;
+			}
+			ul{
+				width:15%;
+				height:auto;
+				position:fixed;
+				left:50%;
+				top:50%;
+				transform:translate(-50%,-50%);
+				box-shadow:0 0 10px 10px #666;
+				list-style-position:inside;
+				font-size:14px;
+				font-family:微软雅黑;
+				overflow: hidden;
+				background-color:#666;
+			}
+			ul>li{
+				width:100%;
+				height:30px;
+				line-height:2rem;
+				background-color:black;
+				color:white;
+				padding-left:5%;
+				transition: all 0.5s;
+				margin:5px 0;
+			}
+			li>a{
+				color:white;
+				text-decoration: none;
+			}
+			a:hover{
+				color:gold;
+			}
+			li:hover{
+				background-color:red;
+				color:green;
+				cursor:pointer;
+			}
+			li:nth-child(1){
+				margin-top:0;
+			}
+			li:nth-child(14){
+				margin-bottom:0;
+			}
+				
+		</style>
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li><a href="https://angularjs.org/">Angular1官网</a></li>
+			<li><a href="https://angular.io/">Angular2官网</a></li>
+			<li><a href="http://www.ionic.wang/">Iconic 中文网</a></li>
+			<li><a href="http://ionicframework.com/getting-started/">Iconic 英文网</a></li>
+			<li><a href="https://cn.vuejs.org/">Vue.js 官网</a></li>
+			<li><a href="https://weex.apache.org/">Weex 文档</a></li>
+			<li><a href="https://github.com/apache/incubator-weex/">Weex - github地址 - 新</a></li>
+			<li><a href="https://github.com/alibaba/weex/">Weex - github地址 - 旧</a></li>
+			<li><a href="https://react.docschina.org/">React.js 中文官网</a></li>
+			<li><a href="https://facebook.github.io/react/">React.js 英文官网</a></li>
+			<li><a href="http://reactnative.cn/">ReactNative 中文网</a></li>
+			<li><a href="http://facebook.github.io/react-native/">ReactNative 英文网</a></li>
+			<li><a href="http://www.html5plus.org/#home">HTML5+</a></li>
+			<li><a href="http://www.dcloud.io/">HBuilder 官网</a></li>
+		</ul>
+	</body>
+</html>
