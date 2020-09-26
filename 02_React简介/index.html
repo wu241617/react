@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-wdith,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,viewport-fit=cover,user-scalable=no">
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			html,body{
+				width:100%;
+				height:100%;
+			}
+			html{
+				font-size:20px;
+			}
+			main,section{
+				display:block;
+			}
+			main{
+				width:30rem;
+				height:auto;
+				margin:2rem auto 0;
+				padding:1rem;
+				box-shadow:0 0 0.5rem 0.5rem #666;
+				border-radius:1rem;
+				font-size:0.7rem;
+				font-family:微软雅黑;
+			}
+			h3{
+				width:100%;
+				height:2rem;
+				text-align:center;
+				line-height:2rem;
+				background-color:black;
+				color:white;
+				margin:0.5rem 0;
+			}
+			ul{
+				list-style-position:inside;
+				padding:1rem;
+			}
+			ul>li{
+				margin:0.5rem 0;
+			}
+		</style>
+		<style>
+			@media (max-width:450px){
+				main{
+					width:auto;
+					height:auto;
+					padding:0;
+					margin:0;
+				}
+			}
+		</style>
+		<title>React 简介</title>
+	</head>
+	<body>
+		<main>
+			<section>
+				<h3>React 简介</h3>
+				<ul>
+					<li>库：小而巧，优点可以很方便的从一个库，切换到另外一个库，代码及会不会改变。只提供了特定的API。</li>
+					<li>框架：大而全，框架提供了一整套的解决方案。所以在项目中间切换到另外框架，是比较困难的。</li>
+				</ul>
+			</section>
+			<section>
+				<h3>前端三大主流框架</h3>
+				<ul>
+					<li>Angular.js,最早</li>
+					<li>Vue.js,最火，关注的人比较多</li>
+					<li>React.js,最流行，用的人比较多</li>
+				</ul>
+			</section>
+			<section>
+				<h3>React 和 Vue 的对比，组件化方面：</h3>
+				<ul>
+					<li>模块化：是从代码角度来进行分析，把一些可复用的代码抽离为单个的模块，便于项目的维护和开发。</li>
+					<li>组件化：是从UI界面角度进行分析，把一些可复用的UI元素抽离为单独的组件，便于项目的维护和开发。</li>
+					<li>组件化的好处：随着项目规模的增大，手里的组件越来越多，很方便就能把现有的组件拼接出来。</li>
+					<li>Vue中实现组件：通过.vue文件，来创建对应的组件，由template（结构）,script（行为）,style（样式）三部分组成。</li>
+					<li>Recat中实现组件：Recat中有组件化的概念，但是并没有像vue这样的组件模板文件，React中，一切都是以JS来表现得。因此JS要合格，ES6和ES7要会用。</li>
+				</ul>
+			</section>
+			<section>
+				<h3>React 和 Vue 的对比，开发团队方面</h3>
+				<ul>
+					<li>React是由FaceBook前端团队进行维护和更新的，因此，React的维护开发团队，技术实力雄厚。</li>
+					<li>Vue，第一版主要是由作者尤雨溪专门进行维护的，Vue2，由以他为主的一个小团队来进行相关的开发和维护。</li>
+				</ul>
+			</section>
+			<section>
+				<h3>React 和 Vue 的对比，社区方面</h3>
+				<ul>
+					<li>社区强大，一些常见的问题，坑，最优的解决方案，文档，博客在社区中都是可以方便找到的。</li>
+					<li>它的社区小一点，有一些坑，可能没人踩过。</li>
+				</ul>
+			</section>
+			<section>
+				<h3>React 和 Vue 的对比，移动APP开发体验方面</h3>
+				<ul>
+					<li>React，结合ReactNative这门技术</li>
+					<li>Vue，结合Weex这门技术,最流行，有成功案例。</li>
+				</ul>
+			</section>
+		</main>
+		<script type="text/javascript"></script>
+	</body>
+</html>
