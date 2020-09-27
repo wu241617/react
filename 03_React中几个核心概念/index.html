@@ -65,7 +65,26 @@
 					<li>DOM的本质：浏览器中的概念，用JS对象来表示页面上的元素，并提供了操作DOM对象的API。</li>
 					<li>什么是React中的虚拟DOM：是框架中概念，是程序员用JS对象模拟页面上的DOM和DOM嵌套。</li>
 					<li>实现虚拟DOM的目的：为了实现页面中，DOM元素的高效更新。</li>
-					<li>DOM和虚拟DOM的区别：</li>
+					<li>DOM和虚拟DOM的区别。程序员手动模拟的这两颗新旧DOM树，就是React中虚拟DOM的概念。</li>
+					<li>虚拟DOM：本质用JS对象的形式，来模拟页面上DOM嵌套关系。目的是，为了实现页面元素的高效更新</li>
+				</ul>
+			</section>
+			<section>
+				<h3>一个网页呈现的过程</h3>
+				<ul>
+					<li>浏览器请求服务器获取页面HTML代码</li>
+					<li>浏览器要在内存中，解析DOM结构，并在浏览器内存中，渲染出一颗DOM树。</li>
+					<li>根据 CSS 形成 CSS样式树</li>
+					<li>将DOM树和CSS样式树，进行组合，形成渲染树</li>
+					<li>进行页面的绘制</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Diff 算法</h3>
+				<ul>
+					<li>tree diff:新旧两颗DOM树，逐层对比的过程，就是Tree Diff。当整棵DOM逐层对比完毕，则所有需要被按需更新的元素，必须能够找到。</li>
+					<li>component diff:在进行Tree Diff 的时候，每一层中，组件级别的对比，叫做Component Diff。如果对比前后，组件类型相同，则暂时认为此组件不需要被更新。如果对比前后，组件类型不同，则需要移除组件，并追加到页面上。</li>
+					<li>element diff:在进行组件对比的时候，如果两个组件类型相同，则需要进行元素对比。</li>
 				</ul>
 			</section>
 		</main>
