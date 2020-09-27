@@ -87,6 +87,27 @@
 					<li>element diff:在进行组件对比的时候，如果两个组件类型相同，则需要进行元素对比。</li>
 				</ul>
 			</section>
+			<section>
+				<h3>在项目中使用react</h3>
+				<ul>
+					<li>运行cnpm i react react-dom -S安装包</li>
+					<li>react:专门用于创建组件和虚拟DOM的，同时组件的生命周期都在这个包中。</li>
+					<li>react-dom:专门进行DOM操作的，最主要的应用场景，就是ReactDOM.render()</li>
+					<li>在index.html页面中，创建容器。</li>
+					<li>导入包</li>
+					<li>创建虚拟DOM元素</li>
+				</ul>
+			</section>
+			<section>
+				<h3>如何启用JSX语法</h3>
+				<ul>
+					<li>安装babel插件</li>
+					<li>运行cnpm i babel-core babel-loader babel-plugin-transform-tuntime -D 运行 cnpm babel-preset-env babel-preset-stage-0 -D</li>
+					<li>安装能够识别JSX语法的包cnpm i babel-preset-react -D</li>
+					<li>在webpack配置文件中，添加loader模块规则</li>
+					<li>添加.babelrc配置文件{"presets":["env","stagr-0","react"],"plugins:["transform-runtime"]"}</li>
+				</ul>
+			</section>
 		</main>
 	</body>
 </html>

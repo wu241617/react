@@ -13,5 +13,10 @@ module.exports = {
 	mode: 'development', //development production
 	plugins: [
 		htmlPlugin
-	]
+	],
+	module: {//所有第三方模块的配置规则
+		rules: [
+			{test: /\.js|jsx$/, use: 'babel-loader', exclude: /node_modules/}//千万别忘记添加exclude排除项
+		]
+	}
 }
