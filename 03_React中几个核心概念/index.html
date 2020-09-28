@@ -102,7 +102,7 @@
 				<h3>如何启用JSX语法</h3>
 				<ul>
 					<li>安装babel插件</li>
-					<li>运行cnpm i babel-core babel-loader babel-plugin-transform-tuntime -D 运行 cnpm babel-preset-env babel-preset-stage-0 -D</li>
+					<li>运行cnpm i babel-core babel-loader@7 babel-plugin-transform-runtime -D 运行 cnpm babel-preset-env babel-preset-stage-0 -D</li>
 					<li>安装能够识别JSX语法的包cnpm i babel-preset-react -D</li>
 					<li>在webpack配置文件中，添加loader模块规则</li>
 					<li>添加.babelrc配置文件{"presets":["env","stagr-0","react"],"plugins:["transform-runtime"]"}</li>
