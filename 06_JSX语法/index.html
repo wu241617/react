@@ -69,6 +69,48 @@
 					<li>在JSX中，绑定类属性使用className,在label标签中，使用htmlFor来代替for。</li>
 				</ul>
 			</section>
+			<section>
+				<h3>react中创建组件，第一种方式</h3>
+				<ul>
+					<li>第一种方式：使用构造函数来创建组件，如果要接收外界传递的数据，需要在构造函数的参数列表中使用props来接收。必须要向外return一个合法的JSX创建的虚拟DOM</li>
+					<li>父组件向子组件传递数据</li>
+					<li>使用{...obj}属性扩散传递数据</li>
+					<li>将组件封装到单独的文件中</li>
+					<li>注意：组件的名称必须大写</li>
+					<li>在webpack.config.js配置文件中做相应操作，省略.jsx后缀名。</li>
+					<li>配置webpack，创建项目根目录</li>
+				</ul>
+			</section>
+			<section>
+				<h3>react中创建组件，第二种方式</h3>
+				<ul>
+					<li>使用class关键字创建组件,了解class关键字的使用。</li>
+					<li>class中contructor的基本使用</li>
+					<li>实例属性和方法</li>
+					<li>静态属性和方法</li>
+					<li>使用extends关键字实现继承</li>
+					<li>class 组件名 extends React.Component { render(){ return JSX--xxx--相关语法 ;}}</li>
+				</ul>
+			</section>
+			<section>
+				<h3>两种创建组件的不同</h3>
+				<ul>
+					<li>用构造函数创建出来的组件（只有 props,没有自己的 私有数据 和 生命周期）叫无状态组件。</li>
+					<li>用class关键字，创建出来的组件（有自己的 私有数据(this.state) / props 和 生命周期）叫，有状态组件。</li>
+					<li>有状态组件和无状态组件本质区别在于：有无state属性和生命周期函数。</li>
+					<li>如果一个组件，需要有自己私有数据，则推荐使用有状态组件（class创建的）。反则使用无状态组件（function()创建）。</li>
+					<li>无状态组件，由于没有自己的私有数据和生命周期，所以运行效率更快。</li>
+				</ul>
+			</section>
+			<section>
+				<h3>组件中 props 和 state / data 之间的区别</h3>
+				<ul>
+					<li>props中的数据都是外界传递过来的</li>
+					<li>state/data 中的数据，都是组件私有的（通过Ajax获取回来的数据，一般都是私有数据）</li>
+					<li>props中的数据都是只读的，不能重新赋值。</li>
+					<li>state/data 中的数据，都是可读可写的。</li>
+				</ul>
+			</section>
 		</main>
 	</body>
 </html>
