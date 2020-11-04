@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,viewport-fit=cover,user-scalalbe=no">
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        html,body{
+            width:100%;
+            height:100%;
+        }
+        html{
+            font-size:20px;
+        }
+        main,section{
+            display:block;
+        }
+        main{
+            width:30rem;
+            height:auto;
+            padding:1rem;
+            margin:2rem auto 0;
+            box-shadow:0 0 0.5rem 0.5rem #666;
+            border-radius:1rem;
+            font-size:0.7rem;
+            font-family:微软雅黑;
+        }
+        h3{
+            width:100%;
+            height:2rem;
+            text-align:center;
+            line-height:2rem;
+            background-color:black;
+            color:white;
+            margin:0.5rem 0;
+        }
+        ul{
+            list-style-position:inside;
+            padding:1rem;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+        }
+        ul>li{
+            margin:0.5rem 0;
+        }
+    </style>
+    <style>
+        @media (max-width:450px){
+            main{
+                width:auto;
+                height:auto;
+                padding:0;
+                margin:0;
+            }
+        }
+    </style>
+    <title>React中父组件向子组件传值</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h3>React 中父组件向子组件传值</h3>
+            <ul>
+                <li>在父组件中给子组件上添加 属性项 content={item} ，属性值 item，为要传递的数值。</li>
+                <li>在子组件中通过 {this.props.content} 来接收父子间传过来的值。</li>
+                <li>在父组件中给子组件上添加 属性项 deleteItem={this.deleteItem.bind(this)} ，属性值 this.deleteItem.bind(this)，为要传递的操作函数。</li>
+                <li>在子组件中通过 {this.props.deleteItem} 来接收父子间传过来的操作函数。</li>
+                <li>注意：子组件不能直接操作父组件的数据，可以通过传递父组件的操作函数，从而调用修改父组件中的数据。</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

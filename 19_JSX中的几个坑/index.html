@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        @media (max-width:450px) {
+            main{
+                width:auto;
+                height:auto;
+                margin:0;
+                padding:0;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h3>JSX中的几个坑</h3>
+            <ul>
+                <li>JSX中注释为 {/* 注释内容 */}, 单行注释 // ，要采取换行。</li>
+                <li>JSX中添加类，className='xx类名'</li>
+                <li>JSX中解析html标签，增加 dangerouslySetInnerHTML={{__html:item}} 属性。例如： &ltli dangerouslySetInnerHTML={{__html:item}}$lg</-li></li>
+                <li>JSX中label标签，for使用 htmlFor 代替。</li>
+                <li>JSX中绑定事件的时候，类似 onclick 写成 onClick。注意一般要改变 this 指向。</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Simpie React Snippets 插件的使用</h3>
+        </section>
+    </main>
+</body>
+</html>
