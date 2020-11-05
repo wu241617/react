@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <link rel="stylesheet" href="./code.css">
+    <style>
+        @media (max-width:450px) {
+            main{
+                width:auto;
+                padding:auto;
+                padding:0;
+                margin:0;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h3>React 生命周期：在某一时刻，可以自动执行的函数</h3>
+            <ul>
+                <li>Initialization：初始化阶段 constructor 中，props 和 state 写入。</li>
+                <li>Mounting：虚拟 DOM 挂载阶段 componentWillMount ---> render (props 和 state 变化时触发) ---> componentDidMount </li>
+                <li>Updation：更新阶段
+                    <ol>
+                        <li>props发生改变：componentWillReceiveProps(位于子组件，不在顶级组件中) ---> shouldComponentUpdate ---> componentWillUpdate ---> render ---> componentDidUpdate</li>
+                        <li>states发生改变：shouldComponentUpdate ---> componentWillUpdate ---> render ---> componentDidUpdate</li>
+                    </ol>
+                </li>
+                <li>Unmounting：卸载阶段 componentWillUnmount</li>
+                <li>注意：componentWillReceiveProps(位于子组件，不在顶级组件中)，组件第一次存在于dom中，函数是不会被执行的，如果已经存在于dom中，函数才会被执行。</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
